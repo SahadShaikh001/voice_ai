@@ -1,12 +1,8 @@
 fastapi
 uvicorn
-python-multipart
-transformers
-torch
-accelerate
-supabase
-soundfile
-scipy
-python-dotenv
 requests
+python-dotenv
+python-multipart
 gtts
+supabase
+httpx
