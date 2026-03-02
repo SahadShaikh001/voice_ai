@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+transformers
+torch
+accelerate
+supabase
+soundfile
+scipy
+python-dotenv
+requests
+gtts
