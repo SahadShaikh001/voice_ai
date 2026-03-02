@@ -19,15 +19,13 @@ app = FastAPI(title="Voice AI Assistant")
 # --------------------------------------------------
 # CORS (restrict in production)
 # --------------------------------------------------
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://voice-ai-frontend-chi.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 # --------------------------------------------------
 # Audio directory setup
 # --------------------------------------------------
@@ -82,4 +80,5 @@ async def voice_chat(file: UploadFile = File(...)):
         "transcript": user_text,
         "response": ai_response,
         "audio_url": f"/audio/{unique_id}_response.mp3"
+
     }
